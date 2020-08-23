@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "rasa-openstack-persistor"
+version = "0.1.0"
+description = "Support for storing RASA models on Openstack Swift object storage."
+authors = ["ezhvsalate <ezhvsalate@ya.ru>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">= 3.6, < 3.8"
+openstacksdk = "^0.48.0"
+rasa = "^1.10.11"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
